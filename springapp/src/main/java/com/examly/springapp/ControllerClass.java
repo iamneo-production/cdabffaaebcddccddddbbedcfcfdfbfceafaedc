@@ -1,4 +1,4 @@
-package com.example.;
+package com.examly.springapp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +10,7 @@ import java.util.*;
 @RestController
 public class ControllerClass {
     @Autowired
+    
     ServiceClass service;
     @GetMapping("/alltasks")
     public List<ModelTask> getAllTasks()
